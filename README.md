@@ -38,5 +38,10 @@ docker-compose up -d
 
 Теперь бот запущен и готов к работе.
 
+
+## Про деплой
+
+Бот задеплоен на удаленный сервер и перейти к боту можно по [ссылке](https://t.me/practicum_for_me_bot)
+
 ### Автор
 [![telegram](https://img.shields.io/badge/Telegram-Join-blue)](https://t.me/qzonic)

@@ -1,6 +1,5 @@
 import asyncio
 import logging
-from logging.handlers import RotatingFileHandler
 
 from aiogram import Dispatcher, Bot
 from aiogram.types import BotCommand
@@ -14,7 +13,6 @@ async def main() -> None:
     logging.basicConfig(
         format='%(asctime)s, %(levelname)s, %(message)s',
         level=logging.INFO,
-        handlers=[RotatingFileHandler('bot.log', maxBytes=5000000, backupCount=5)]
     )
 
     commands_for_bot = []

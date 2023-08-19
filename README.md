@@ -31,5 +31,12 @@ OPENAI_TOKEN=
 
 Получить токен openai [OpenAI](https://platform.openai.com/account/api-keys)
 
+Далее необходимо собрать Docker-контейнеры:
+```
+docker-compose up -d
+```
+
+Теперь бот запущен и готов к работе.
+
 ### Автор
 [![telegram](https://img.shields.io/badge/Telegram-Join-blue)](https://t.me/qzonic)

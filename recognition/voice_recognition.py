@@ -2,10 +2,9 @@ import os
 import subprocess
 
 import openai
-import soundfile
 from speech_recognition import Recognizer, AudioFile
 
-from bot.config import OPENAI_CONTENT
+from config import OPENAI_CONTENT
 
 
 class AudioConverter:

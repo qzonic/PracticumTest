@@ -1,6 +1,6 @@
 from aiogram import types
 
-from bot.config import LAST_SELFIE_URL, SCHOOL_PHOTO_URL
+from config import LAST_SELFIE_URL, SCHOOL_PHOTO_URL
 
 
 async def last_selfie(message: types.Message):

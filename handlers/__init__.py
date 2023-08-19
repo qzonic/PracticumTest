@@ -3,16 +3,16 @@ __all__ = ['register_user_commands']
 from aiogram import Router, F
 from aiogram.filters import Command, CommandStart
 
-from bot import config
-from bot.callback_data.voice_callback_data import VoiceCallBackData
-from bot.handlers.start import start
-from bot.handlers.help import help_command
-from bot.handlers.photos import last_selfie, school_photo
-from bot.handlers.post import send_post
-from bot.handlers.sources import sources
-from bot.handlers.voices import send_available_voices, send_voice
-from bot.middlewares.download_voice import DownloadVoiceMiddleware
-from bot.handlers.voice_answer import recognise_and_send_answer
+import config
+from callback_data.voice_callback_data import VoiceCallBackData
+from handlers.start import start
+from handlers.help import help_command
+from handlers.photos import last_selfie, school_photo
+from handlers.post import send_post
+from handlers.sources import sources
+from handlers.voices import send_available_voices, send_voice
+from middlewares.download_voice import DownloadVoiceMiddleware
+from handlers.voice_answer import recognise_and_send_answer
 
 
 def register_user_commands(router: Router) -> None:

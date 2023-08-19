@@ -1,8 +1,8 @@
 from aiogram import types
 from speech_recognition import UnknownValueError
 
-from bot.config import RECOGNITION_ERROR, OPENAI_ANSWER
-from bot.recognition.voice_recognition import AudioConverter
+from config import RECOGNITION_ERROR, OPENAI_ANSWER
+from recognition.voice_recognition import AudioConverter
 
 
 async def recognise_and_send_answer(message: types.Message):

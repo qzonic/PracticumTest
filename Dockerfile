@@ -1,15 +1,24 @@
 FROM python:3.9-slim
 
-RUN mkdir /bot
+RUN apt-get -y update
 
-COPY requirements.txt /bot
+RUN apt-get -y upgrade
+
+RUN apt-get install -y ffmpeg
+
+RUN apt-get install flac
+
+
+RUN mkdir /app
+
+COPY requirements.txt /app
 
 RUN pip3 install --upgrade pip
 
-RUN pip3 install -r /bot/requirements.txt --no-cache-dir
+RUN pip3 install -r /app/requirements.txt --no-cache-dir
 
-COPY . /bot
+COPY . /app
 
-WORKDIR /bot/
+WORKDIR /app/
 
-CMD ["python3", "./bot/__main__.py"]
+CMD ["python3", "__main__.py"]

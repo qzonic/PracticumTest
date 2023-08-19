@@ -1,8 +1,8 @@
 from aiogram import types
 
-from bot import config
-from bot.callback_data.voice_callback_data import VoiceCallBackData
-from bot.keyboards.voices_keyboard import voices_keyboard
+import config
+from callback_data.voice_callback_data import VoiceCallBackData
+from keyboards.voices_keyboard import voices_keyboard
 
 
 VOICES = {

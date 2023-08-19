@@ -1,7 +1,7 @@
 from aiogram.utils.keyboard import InlineKeyboardBuilder
 
-from bot import config
-from bot.callback_data.voice_callback_data import VoiceCallBackData
+import config
+from callback_data.voice_callback_data import VoiceCallBackData
 
 
 def voices_keyboard():

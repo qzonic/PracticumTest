@@ -1,7 +1,7 @@
 from aiogram import types
 
-from bot.config import START_MESSAGE
-from bot.keyboards.start_keyboard import start_keyboard
+from config import START_MESSAGE
+from keyboards.start_keyboard import start_keyboard
 
 
 async def start(message: types.Message):

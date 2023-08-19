@@ -1,6 +1,6 @@
 from aiogram import types
 
-from bot.config import SOURCES_ANSWER
+from config import SOURCES_ANSWER
 
 
 async def sources(message: types.Message):
